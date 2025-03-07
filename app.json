@@ -13,7 +13,10 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.wa2goose.BLEExpoBlog"
+      "bundleIdentifier": "com.jooyeonpark.BLEExpoBlog",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -25,7 +28,7 @@
         "android.permission.BLUETOOTH_ADMIN",
         "android.permission.BLUETOOTH_CONNECT"
       ],
-      "package": "com.wa2goose.BLEExpoBlog"
+      "package": "com.jooyeonpark.BLEExpoBlog"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -35,13 +38,15 @@
         "react-native-ble-plx",
         {
           "isBackgroundEnabled": true,
-          "modes": [
-            "peripheral",
-            "central"
-          ],
+          "modes": ["peripheral", "central"],
           "bluetoothAlwaysPermission": "Allow $(PRODUCT_NAME) to connect to bluetooth devices"
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "5753a1f8-cbab-4dd2-8e41-a69400d75a28"
+      }
+    }
   }
 }

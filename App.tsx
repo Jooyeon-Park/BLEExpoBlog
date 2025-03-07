@@ -44,9 +44,7 @@ const App = () => {
             <Text style={styles.heartRateTitleText}>Connected</Text>
           </>
         ) : (
-          <Text style={styles.heartRateTitleText}>
-            Please connect the Arduino
-          </Text>
+          <Text style={styles.heartRateTitleText}>Please connect</Text>
         )}
       </View>
       <TouchableOpacity onPress={openModal} style={styles.ctaButton}>
